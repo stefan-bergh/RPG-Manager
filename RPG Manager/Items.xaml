@@ -65,7 +65,7 @@
         <Image x:Name="iIcon" HorizontalAlignment="Left" Height="175" Margin="300,60,0,0" VerticalAlignment="Top" Width="175" MouseDown="iIcon_MouseDown" Source="Media/placeholder.png"/>
         <Image x:Name="iLeft" HorizontalAlignment="Left" Height="25" Margin="163,297,0,0" VerticalAlignment="Top" Width="25" Source="Media/leftarrows.png"/>
         <Image x:Name="iRight" HorizontalAlignment="Left" Height="25" Margin="350,297,0,0" VerticalAlignment="Top" Width="25" Source="Media/rightarrows.png" RenderTransformOrigin="5.2,0.632"/>
-        <Label x:Name="lbName" Content="Strong sword Name" HorizontalAlignment="Center" Margin="0,295,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbName" Content="Healing Potion" HorizontalAlignment="Center" Margin="0,295,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
         <Button x:Name="btNew" Content="New" HorizontalAlignment="Left" Margin="184,327,0,0" VerticalAlignment="Top" Width="170" Height="22"/>
     </Grid>
 </Window>
