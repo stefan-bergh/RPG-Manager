@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RPG_Manager"
         mc:Ignorable="d"
-        Title="RPG Manager" Height="466.8" Width="545" ShowInTaskbar="False"
+        Title="RPG Manager" Height="478" Width="545" ShowInTaskbar="False"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="#FFFAFAFA"
         TextElement.FontWeight="Medium"

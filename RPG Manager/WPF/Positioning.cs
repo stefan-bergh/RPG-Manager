@@ -14,7 +14,8 @@ namespace RPG_Manager.WPF
             newW.Left = oldW.Left;
             newW.Top = oldW.Top;
             newW.Width = oldW.Width;
-            newW.Height = oldW.Height;
+            //Allow for flexible heights
+            //newW.Height = oldW.Height;
             newW.Show();
             oldW.Hide();
         }
