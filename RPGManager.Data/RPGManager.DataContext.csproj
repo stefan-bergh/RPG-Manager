@@ -79,5 +79,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IDataContext\RPGManager.IDataContext.csproj">
+      <Project>{9c4b357c-6cb0-4f92-847e-26a526d34afe}</Project>
+      <Name>RPGManager.IDataContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPGManager.Domain\RPGManager.Domain.csproj">
+      <Project>{7d817443-70d5-4086-9770-825f9ef448f0}</Project>
+      <Name>RPGManager.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPGManager.Business
 {
-    public class Class1
+    class Character
     {
     }
 }

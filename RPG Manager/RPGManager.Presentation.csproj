@@ -207,9 +207,17 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RPGManager.Business\RPGManager.Logic.csproj">
-      <Project>{6376417e-c9cf-4879-b26c-faa76d28edd8}</Project>
-      <Name>RPGManager.Logic</Name>
+    <ProjectReference Include="..\RPGManager.Domain\RPGManager.Domain.csproj">
+      <Project>{7d817443-70d5-4086-9770-825f9ef448f0}</Project>
+      <Name>RPGManager.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPGManager.Factory\RPGManager.Factory.csproj">
+      <Project>{3f00d1c3-e517-4946-8b29-78420b8b3dcd}</Project>
+      <Name>RPGManager.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPGManager.ILogic\RPGManager.ILogic.csproj">
+      <Project>{62320d28-0287-4c4c-bb6f-8542b7b88a54}</Project>
+      <Name>RPGManager.ILogic</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
