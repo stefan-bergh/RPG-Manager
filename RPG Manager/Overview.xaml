@@ -25,10 +25,11 @@
 
             <ContentControl Content="{Binding CurrentPage}" />
         </DockPanel>-->
-        <Menu Width="538" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" BorderBrush="Blue" BorderThickness="1">
+        <Menu Width="538" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" BorderBrush="Blue"
+              BorderThickness="1">
             <Menu.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF3F51B5"/>
+                    <GradientStop Color="#FF3F51B5" />
                 </LinearGradientBrush>
             </Menu.Background>
             <Menu.ItemsPanel>
@@ -36,18 +37,22 @@
                     <VirtualizingStackPanel Orientation="Horizontal" />
                 </ItemsPanelTemplate>
             </Menu.ItemsPanel>
-            <MenuItem x:Name="btOverview" Header="Overview" Height="Auto" Margin="0,0,-0.2,-1.6" Click="btOverview_Click"/>
-            <MenuItem x:Name="btCharacters" Header="Characters" Height="Auto" Margin="0.2,0,-0.4,-1.6" Click="btCharacters_Click"/>
-            <MenuItem x:Name="btClasses" Header="Classes" Height="Auto" Margin="0.2,0,-0.4,-1.6" Click="btClasses_Click"/>
-            <MenuItem x:Name="btCategories" Header="Categories" Height="Auto" Margin="0.2,0,-0.4,-1.6" Click="btCategories_Click"/>
+            <MenuItem x:Name="btOverview" Header="Overview" Height="Auto" Margin="0,0,-0.2,-1.6"
+                      Click="btOverview_Click" />
+            <MenuItem x:Name="btCharacters" Header="Characters" Height="Auto" Margin="0.2,0,-0.4,-1.6"
+                      Click="btCharacters_Click" />
+            <MenuItem x:Name="btClasses" Header="Classes" Height="Auto" Margin="0.2,0,-0.4,-1.6"
+                      Click="btClasses_Click" />
+            <MenuItem x:Name="btCategories" Header="Categories" Height="Auto" Margin="0.2,0,-0.4,-1.6"
+                      Click="btCategories_Click" />
             <MenuItem x:Name="btItemMenu" Header="Items" Height="Auto" Margin="0.2,0,-0.4,-1.6">
-                <MenuItem x:Name="btItems" Header="Items" Background="#FF3F51B5" Click="btItems_Click"/>
-                <Separator Background="#FF192A86"/>
-                <MenuItem x:Name="btArmors" Header="Armors" Background="#FF3F51B5" Click="btArmors_Click"/>
-                <Separator Background="#FF192A86"/>
-                <MenuItem x:Name="btWeapons" Header="Weapons" Background="#FF3F51B5" Click="btWeapons_Click"/>
+                <MenuItem x:Name="btItems" Header="Items" Background="#FF3F51B5" Click="btItems_Click" />
+                <Separator Background="#FF192A86" />
+                <MenuItem x:Name="btArmors" Header="Armors" Background="#FF3F51B5" Click="btArmors_Click" />
+                <Separator Background="#FF192A86" />
+                <MenuItem x:Name="btWeapons" Header="Weapons" Background="#FF3F51B5" Click="btWeapons_Click" />
             </MenuItem>
-            <MenuItem x:Name="btSkills" Header="Skills" Height="Auto" Margin="0.2,0,-0.4,-1.6" Click="btSkills_Click"/>
+            <MenuItem x:Name="btSkills" Header="Skills" Height="Auto" Margin="0.2,0,-0.4,-1.6" Click="btSkills_Click" />
         </Menu>
     </Grid>
 </Window>

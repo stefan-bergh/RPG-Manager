@@ -40,18 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Armor.cs" />
-    <Compile Include="Character.cs" />
-    <Compile Include="Class.cs" />
-    <Compile Include="ClassCategory.cs" />
-    <Compile Include="Equipment.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="Skill.cs" />
-    <Compile Include="SkillType.cs" />
-    <Compile Include="Stat.cs" />
-    <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IRepository\RPGManager.IRepository.csproj">

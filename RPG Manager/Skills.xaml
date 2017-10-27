@@ -25,10 +25,11 @@
 
             <ContentControl Content="{Binding CurrentPage}" />
         </DockPanel>-->
-        <Menu Width="538" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" BorderBrush="Blue" BorderThickness="1">
+        <Menu Width="538" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" BorderBrush="Blue"
+              BorderThickness="1">
             <Menu.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF3F51B5"/>
+                    <GradientStop Color="#FF3F51B5" />
                 </LinearGradientBrush>
             </Menu.Background>
             <Menu.ItemsPanel>
@@ -36,33 +37,45 @@
                     <VirtualizingStackPanel Orientation="Horizontal" />
                 </ItemsPanelTemplate>
             </Menu.ItemsPanel>
-            <MenuItem x:Name="btOverview" Header="Overview" Height="Auto" Margin="0,0,-0.2,-1.6" Click="btOverview_Click"/>
-            <MenuItem x:Name="btCharacters" Header="Characters" Height="Auto" Margin="0.2,0,-0.4,-1.6" Click="btCharacters_Click"/>
-            <MenuItem x:Name="btClasses" Header="Classes" Height="Auto" Margin="0.2,0,-0.4,-1.6" Click="btClasses_Click"/>
-            <MenuItem x:Name="btCategories" Header="Categories" Height="Auto" Margin="0.2,0,-0.4,-1.6" Click="btCategories_Click"/>
+            <MenuItem x:Name="btOverview" Header="Overview" Height="Auto" Margin="0,0,-0.2,-1.6"
+                      Click="btOverview_Click" />
+            <MenuItem x:Name="btCharacters" Header="Characters" Height="Auto" Margin="0.2,0,-0.4,-1.6"
+                      Click="btCharacters_Click" />
+            <MenuItem x:Name="btClasses" Header="Classes" Height="Auto" Margin="0.2,0,-0.4,-1.6"
+                      Click="btClasses_Click" />
+            <MenuItem x:Name="btCategories" Header="Categories" Height="Auto" Margin="0.2,0,-0.4,-1.6"
+                      Click="btCategories_Click" />
             <MenuItem x:Name="btItemMenu" Header="Items" Height="Auto" Margin="0.2,0,-0.4,-1.6">
-                <MenuItem x:Name="btItems" Header="Items" Background="#FF3F51B5" Click="btItems_Click"/>
-                <Separator Background="#FF192A86"/>
-                <MenuItem x:Name="btArmors" Header="Armors" Background="#FF3F51B5" Click="btArmors_Click"/>
-                <Separator Background="#FF192A86"/>
-                <MenuItem x:Name="btWeapons" Header="Weapons" Background="#FF3F51B5" Click="btWeapons_Click"/>
+                <MenuItem x:Name="btItems" Header="Items" Background="#FF3F51B5" Click="btItems_Click" />
+                <Separator Background="#FF192A86" />
+                <MenuItem x:Name="btArmors" Header="Armors" Background="#FF3F51B5" Click="btArmors_Click" />
+                <Separator Background="#FF192A86" />
+                <MenuItem x:Name="btWeapons" Header="Weapons" Background="#FF3F51B5" Click="btWeapons_Click" />
             </MenuItem>
-            <MenuItem x:Name="btSkills" Header="Skills" Height="Auto" Margin="0.2,0,-0.4,-1.6" Click="btSkills_Click"/>
+            <MenuItem x:Name="btSkills" Header="Skills" Height="Auto" Margin="0.2,0,-0.4,-1.6" Click="btSkills_Click" />
         </Menu>
-        <Label Content="Name:" HorizontalAlignment="Left" Margin="28,38,0,0" VerticalAlignment="Top"/>
-        <Label Content="Description:" HorizontalAlignment="Left" Margin="28,66,0,0" VerticalAlignment="Top"/>
-        <Label Content="Required level:" HorizontalAlignment="Left" Margin="28,98,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="27" Margin="121,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cbCategorie" HorizontalAlignment="Left" SelectedIndex="0" Margin="121,67,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Melee"/>
-            <ComboBoxItem Content="Ranged"/>
-            <ComboBoxItem Content="Magic"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="28,38,0,0" VerticalAlignment="Top" />
+        <Label Content="Description:" HorizontalAlignment="Left" Margin="28,66,0,0" VerticalAlignment="Top" />
+        <Label Content="Required level:" HorizontalAlignment="Left" Margin="28,98,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="27" Margin="121,35,0,0" TextWrapping="Wrap" Text=""
+                 VerticalAlignment="Top" Width="120" />
+        <ComboBox x:Name="cbCategorie" HorizontalAlignment="Left" SelectedIndex="0" Margin="121,67,0,0"
+                  VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Melee" />
+            <ComboBoxItem Content="Ranged" />
+            <ComboBoxItem Content="Magic" />
         </ComboBox>
-        <Image x:Name="iLeft" HorizontalAlignment="Left" Height="25" Margin="163,380,0,0" VerticalAlignment="Top" Width="25" Source="Media/leftarrows.png"/>
-        <Image x:Name="iRight" HorizontalAlignment="Left" Height="25" Margin="350,380,0,0" VerticalAlignment="Top" Width="25" Source="Media/rightarrows.png" RenderTransformOrigin="5.2,0.632"/>
-        <Label x:Name="lbName" Content="Warrior" HorizontalAlignment="Center" Margin="201,378,201.4,0" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
-        <Button x:Name="btNew" Content="New" HorizontalAlignment="Left" Margin="184,410,0,0" VerticalAlignment="Top" Width="170" Height="22"/>
-        <Slider x:Name="sLevel" HorizontalAlignment="Left" Margin="38,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.6,-0.307" Width="203"/>
-        <Image HorizontalAlignment="Left" Height="135" Margin="286,55,0,0" VerticalAlignment="Top" Width="231" Source="Media/placeholder.png" Stretch="Fill"/>
+        <Image x:Name="iLeft" HorizontalAlignment="Left" Height="25" Margin="163,380,0,0" VerticalAlignment="Top"
+               Width="25" Source="Media/leftarrows.png" />
+        <Image x:Name="iRight" HorizontalAlignment="Left" Height="25" Margin="350,380,0,0" VerticalAlignment="Top"
+               Width="25" Source="Media/rightarrows.png" RenderTransformOrigin="5.2,0.632" />
+        <Label x:Name="lbName" Content="Warrior" HorizontalAlignment="Center" Margin="201,378,201.4,0"
+               VerticalAlignment="Top" HorizontalContentAlignment="Center" />
+        <Button x:Name="btNew" Content="New" HorizontalAlignment="Left" Margin="184,410,0,0" VerticalAlignment="Top"
+                Width="170" Height="22" />
+        <Slider x:Name="sLevel" HorizontalAlignment="Left" Margin="38,125,0,0" VerticalAlignment="Top"
+                RenderTransformOrigin="-0.6,-0.307" Width="203" />
+        <Image HorizontalAlignment="Left" Height="135" Margin="286,55,0,0" VerticalAlignment="Top" Width="231"
+               Source="Media/placeholder.png" Stretch="Fill" />
     </Grid>
 </Window>

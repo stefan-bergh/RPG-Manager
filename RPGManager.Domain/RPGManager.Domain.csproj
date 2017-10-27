@@ -41,6 +41,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\EquipmentTypes.cs" />
+    <Compile Include="Models\Armor.cs" />
+    <Compile Include="Models\Character.cs" />
+    <Compile Include="Models\Class.cs" />
+    <Compile Include="Models\ClassCategory.cs" />
+    <Compile Include="Models\Equipment.cs" />
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Skill.cs" />
+    <Compile Include="Models\SkillType.cs" />
+    <Compile Include="Models\Stat.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Weapon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

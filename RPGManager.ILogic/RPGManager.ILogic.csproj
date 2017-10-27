@@ -40,8 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IArmor.cs" />
+    <Compile Include="ICharacter.cs" />
+    <Compile Include="IClass.cs" />
+    <Compile Include="IClassCategory.cs" />
+    <Compile Include="IEquipment.cs" />
+    <Compile Include="IItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ISkill.cs" />
+    <Compile Include="ISkillType.cs" />
+    <Compile Include="IStat.cs" />
+    <Compile Include="IUser.cs" />
+    <Compile Include="IWeapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RPGManager.Domain\RPGManager.Domain.csproj">

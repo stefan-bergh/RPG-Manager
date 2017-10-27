@@ -13,16 +13,23 @@
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="359" VerticalAlignment="Top" Width="538" Source="Media/background.png" Stretch="Fill"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="108" Stroke="Black" VerticalAlignment="Center" Width="201"/>
-        <Label Content="Username:" HorizontalAlignment="Left" Margin="179,132,0,0" VerticalAlignment="Top"/>
-        <Label Content="Password:" HorizontalAlignment="Left" Margin="179,164,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btNew" Content="New" HorizontalAlignment="Left" Margin="184,196,0,0" VerticalAlignment="Top" Width="74" Height="28" Click="btNew_Click"/>
-        <Button x:Name="btCancel" Content="Cancel" Visibility="Hidden" HorizontalAlignment="Left" Margin="184,196,0,0" VerticalAlignment="Top" Width="74" Height="28" Click="btCancel_Click"/>
-        <Button x:Name="btLogin" Content="Login" HorizontalAlignment="Left" Margin="274,196,0,0" VerticalAlignment="Top" Width="74" Height="28" Click="btLogin_Click"/>
-        <Button x:Name="btCreate" Content="Create" Visibility="Hidden" HorizontalAlignment="Left" Margin="274,196,0,0" VerticalAlignment="Top" Width="74" Height="28"/>
-        <TextBox x:Name="tbUser" HorizontalAlignment="Left" Height="24" Margin="274,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84"/>
-        <PasswordBox x:Name="tbPass" HorizontalAlignment="Left" Margin="274,161,0,0" VerticalAlignment="Top" Width="84"/>
+        <Image HorizontalAlignment="Left" Height="359" VerticalAlignment="Top" Width="538"
+               Source="Media/background.png" Stretch="Fill" />
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="108" Stroke="Black" VerticalAlignment="Center"
+                   Width="201" />
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="179,132,0,0" VerticalAlignment="Top" />
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="179,164,0,0" VerticalAlignment="Top" />
+        <Button x:Name="btNew" Content="New" HorizontalAlignment="Left" Margin="184,196,0,0" VerticalAlignment="Top"
+                Width="74" Height="28" Click="btNew_Click" />
+        <Button x:Name="btCancel" Content="Cancel" Visibility="Hidden" HorizontalAlignment="Left" Margin="184,196,0,0"
+                VerticalAlignment="Top" Width="74" Height="28" Click="btCancel_Click" />
+        <Button x:Name="btLogin" Content="Login" HorizontalAlignment="Left" Margin="274,196,0,0"
+                VerticalAlignment="Top" Width="74" Height="28" Click="btLogin_Click" />
+        <Button x:Name="btCreate" Content="Create" Visibility="Hidden" HorizontalAlignment="Left" Margin="274,196,0,0"
+                VerticalAlignment="Top" Width="74" Height="28" />
+        <TextBox x:Name="tbUser" HorizontalAlignment="Left" Height="24" Margin="274,132,0,0" TextWrapping="Wrap"
+                 VerticalAlignment="Top" Width="84" />
+        <PasswordBox x:Name="tbPass" HorizontalAlignment="Left" Margin="274,161,0,0" VerticalAlignment="Top" Width="84" />
         <!-- EIGEN MENU
         <DockPanel x:Name="RootWindow">
             <DockPanel DockPanel.Dock="Top" x:Name="TitleBar" Height="33" Margin="0,0,0.4,0">
