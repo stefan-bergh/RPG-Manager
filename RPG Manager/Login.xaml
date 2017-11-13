@@ -13,10 +13,10 @@
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="359" VerticalAlignment="Top" Width="538"
+        <Image HorizontalAlignment="Left" Height="380" VerticalAlignment="Top" Width="538"
                Source="Media/background.png" Stretch="Fill" />
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="108" Stroke="Black" VerticalAlignment="Center"
-                   Width="201" />
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="127" Stroke="Black" VerticalAlignment="Center"
+                   Width="201" Margin="169,122,168.4,141.4" />
         <Label Content="Username:" HorizontalAlignment="Left" Margin="179,132,0,0" VerticalAlignment="Top" />
         <Label Content="Password:" HorizontalAlignment="Left" Margin="179,164,0,0" VerticalAlignment="Top" />
         <Button x:Name="btNew" Content="New" HorizontalAlignment="Left" Margin="184,196,0,0" VerticalAlignment="Top"

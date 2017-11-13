@@ -55,14 +55,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess.cs" />
+    <Compile Include="SQL\CharacterSQLContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL\databaseCommands.cs" />
+    <Compile Include="SQL\UserSQLContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RPGManagerDB.mdf">
+    <Content Include="SQL\RPGManagerDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="RPGManagerDB_log.ldf">
+    <Content Include="SQL\RPGManagerDB_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>RPGManagerDB.mdf</DependentUpon>
     </Content>

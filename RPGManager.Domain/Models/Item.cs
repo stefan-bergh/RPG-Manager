@@ -1,6 +1,6 @@
 ﻿namespace RPGManager.Domain.Models
 {
-    public class Item
+    public class Item : Equipment
     {
     }
 }

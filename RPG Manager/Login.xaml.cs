@@ -1,4 +1,7 @@
 ﻿using System.Windows;
+using RPGManager.Domain.Models;
+using RPGManager.Factory;
+using RPGManager.ILogic;
 using RPG_Manager.WPF;
 
 namespace RPG_Manager
@@ -8,7 +11,7 @@ namespace RPG_Manager
     /// </summary>
     public partial class Login : Window
     {
-        private Database db = new Database();
+        public IUserLogic UL = UserLogicFactory.getUserLogic();
 
         public Login()
         {
@@ -33,15 +36,20 @@ namespace RPG_Manager
 
         private void btLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (true) //db.checkUser(tbUser.Text ?? "", tbPass.Password ?? ""))
-                Positioning.openNewWindow(new Overview(), this);
+            if (UL.checkAccountDetails(tbUser.Text, tbPass.Password))
+            {
+                User user = UL.getUser(tbUser.Text, tbPass.Password);
+                Positioning.openNewWindow(new Overview(user), this);
+            }
             else
+            {
                 MessageBox.Show("Login failed.");
+            }
         }
 
         private void btCreate_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: Make account
+            MessageBox.Show("Creating an account is only possible on the website.");
         }
     }
 }
