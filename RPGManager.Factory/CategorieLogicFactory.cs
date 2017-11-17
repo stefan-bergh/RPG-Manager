@@ -4,19 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Repository;
-using RPGManager.ILogic;
 using RPGManager.Business;
 using RPGManager.Data.SQL;
+using RPGManager.ILogic;
 
 namespace RPGManager.Factory
 {
-    public class UserLogicFactory
+    public class CategorieLogicFactory
     {
-        public static IUserLogic getUserSQLContext()
+        public static ICategorieLogic getClassSQLContext()
         {
-            return new UserLogic(new UserRepository(new UserSQLContext()));
+            return new CategorieLogic(new CategorieRepository(new CategorieSQLContext()));
         }
-
-
     }
 }

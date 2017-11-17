@@ -55,8 +55,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SQL\CategorieSQLContext.cs" />
     <Compile Include="SQL\CharacterSQLContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL\ClassSQLContext.cs" />
     <Compile Include="SQL\databaseCommands.cs" />
     <Compile Include="SQL\UserSQLContext.cs" />
   </ItemGroup>

@@ -11,7 +11,7 @@ namespace RPG_Manager
     /// </summary>
     public partial class Login : Window
     {
-        public IUserLogic UL = UserLogicFactory.getUserLogic();
+        public IUserLogic UL = UserLogicFactory.getUserSQLContext();
 
         public Login()
         {

@@ -9,14 +9,22 @@ namespace RPGManager.Data.SQL
                 @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Stefan\Documents\Visual Studio 2017\Projects\RPG Manager\RPGManager.Data\SQL\RPGManagerDB.mdf;Integrated Security=True";
         
         // Used to run all INSERT, UPDATE and DELETE queries.
-        public void RunQuery(string Query)
+        public bool RunQuery(string Query)
         {
-            var query = Query;
-            var conn = new SqlConnection(connectionString);
-            conn.Open();
-            var cmd = new SqlCommand(query, conn);
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            /*y
+            {*/
+                var query = Query;
+                var conn = new SqlConnection(connectionString);
+                conn.Open();
+                var cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                return true;
+/*          }
+            catch
+            {
+                return false;
+            }*/
         }
 
         // Get query results back as table

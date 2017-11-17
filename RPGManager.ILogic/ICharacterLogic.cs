@@ -9,9 +9,11 @@ namespace RPGManager.ILogic
 {
     public interface ICharacterLogic
     {
-        List<Character> GetAllCharacters(int userid);
+       /* List<Character> GetAllCharacters(int userid);
         bool insertCharacter(Character character);
         bool updateCharacter(Character character);
-        bool deleteCharacter(Character character);
+        bool deleteCharacter(Character character);*/
+
+
     }
 }

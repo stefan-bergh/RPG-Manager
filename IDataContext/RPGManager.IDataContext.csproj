@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICategorieContext.cs" />
     <Compile Include="ICharacterContext.cs" />
+    <Compile Include="IClassContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IUserContext.cs" />
   </ItemGroup>

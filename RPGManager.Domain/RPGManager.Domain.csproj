@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\EquipmentTypes.cs" />
+    <Compile Include="Enums\UITypes.cs" />
     <Compile Include="Models\Armor.cs" />
     <Compile Include="Models\Character.cs" />
     <Compile Include="Models\Class.cs" />

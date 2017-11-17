@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICategorieLogic.cs" />
     <Compile Include="ICharacterLogic.cs" />
+    <Compile Include="IClassLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IUserLogic.cs" />
   </ItemGroup>
