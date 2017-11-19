@@ -40,11 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArmorLogic.cs" />
     <Compile Include="CategorieLogic.cs" />
     <Compile Include="CharacterLogic.cs" />
     <Compile Include="ClassLogic.cs" />
+    <Compile Include="ItemLogic.cs" />
+    <Compile Include="SkillLogic.cs" />
     <Compile Include="UserLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeaponLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IRepository\RPGManager.IRepository.csproj">

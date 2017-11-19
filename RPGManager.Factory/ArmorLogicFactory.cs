@@ -10,11 +10,11 @@ using RPGManager.ILogic;
 
 namespace RPGManager.Factory
 {
-    public class CategorieLogicFactory
+    class ArmorLogicFactory
     {
-        public static ICategorieLogic getCategorieSQLContext()
+        public static IArmorLogic getArmorSQLContext()
         {
-            return new CategorieLogic(new CategorieRepository(new CategorieSQLContext()));
+            return new ArmorLogic(new ArmorRepository(new ArmorSQLContext()));
         }
     }
 }

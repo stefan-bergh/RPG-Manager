@@ -12,9 +12,9 @@ namespace RPGManager.Business
     {
         public ICharacterRepository CR;
 
-        public CharacterLogic(ICharacterRepository charRepo)
+        public CharacterLogic(ICharacterRepository Repo)
         {
-            CR = charRepo;
+            CR = Repo;
         }
     }
 }

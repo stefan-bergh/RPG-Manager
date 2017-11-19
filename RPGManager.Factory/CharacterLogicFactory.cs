@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Repository;
 using RPGManager.Business;
-using RPGManager.Data.SQL;
+using RPGManager.Data;
 using RPGManager.ILogic;
 
 namespace RPGManager.Factory
 {
-    public class CategorieLogicFactory
+    class CharacterLogicFactory
     {
-        public static ICategorieLogic getCategorieSQLContext()
+        public static ICharacterLogic getCharacterSQLContext()
         {
-            return new CategorieLogic(new CategorieRepository(new CategorieSQLContext()));
+            return new CharacterLogic(new CharacterRepository(new CharacterSQLContext()));
         }
     }
 }

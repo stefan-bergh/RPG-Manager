@@ -14,7 +14,7 @@ namespace RPG_Manager
     /// </summary>
     public partial class Categories : Window
     {
-        private ICategorieLogic UL = CategorieLogicFactory.getClassSQLContext();
+        private ICategorieLogic UL = CategorieLogicFactory.getCategorieSQLContext();
         private User user;
         private UITypes _uiStatus = UITypes.CreateNew;
         private List<ClassCategory> categories = new List<ClassCategory>();

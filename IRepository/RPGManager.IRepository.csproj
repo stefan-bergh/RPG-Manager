@@ -40,10 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IArmorRepository.cs" />
     <Compile Include="ICategorieRepository.cs" />
     <Compile Include="ICharacterRepository.cs" />
     <Compile Include="IClassRepository.cs" />
+    <Compile Include="IItemRepository.cs" />
+    <Compile Include="ISkillRepository.cs" />
     <Compile Include="IUserRepository.cs" />
+    <Compile Include="IWeaponRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,11 +10,11 @@ using RPGManager.ILogic;
 
 namespace RPGManager.Factory
 {
-    public class CategorieLogicFactory
+    class SkillFactoryLogic
     {
-        public static ICategorieLogic getCategorieSQLContext()
+        public static ISkillLogic getSkillSQLContext()
         {
-            return new CategorieLogic(new CategorieRepository(new CategorieSQLContext()));
+            return new SkillLogic(new SkillRepository(new SkillSQLContext()));
         }
     }
 }

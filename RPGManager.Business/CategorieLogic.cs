@@ -13,9 +13,9 @@ namespace RPGManager.Business
     {
         public ICategorieRepository CR;
 
-        public CategorieLogic(ICategorieRepository categorieRepo)
+        public CategorieLogic(ICategorieRepository Repo)
         {
-            CR = categorieRepo;
+            CR = Repo;
         }
 
         public List<ClassCategory> GetAllCategorys(int userid)

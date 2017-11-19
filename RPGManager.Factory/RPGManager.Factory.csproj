@@ -40,9 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArmorLogicFactory.cs" />
     <Compile Include="CategorieLogicFactory.cs" />
+    <Compile Include="CharacterLogicFactory.cs" />
+    <Compile Include="ClassLogicFactory.cs" />
+    <Compile Include="ItemLogicFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SkillFactoryLogic.cs" />
     <Compile Include="UserLogicFactory.cs" />
+    <Compile Include="WeaponLogicFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IDataContext\RPGManager.IDataContext.csproj">

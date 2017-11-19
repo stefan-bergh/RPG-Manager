@@ -8,13 +8,13 @@ using RPGManager.ILogic;
 
 namespace RPGManager.Business
 {
-    public class ClassLogic : IClassLogic
+    public class SkillLogic : ISkillLogic
     {
-        public IClassRepository CR;
+        public ISkillRepository SR;
 
-        public ClassLogic(IClassRepository Repo)
+        public SkillLogic(ISkillRepository Repo)
         {
-            CR = Repo;
+            SR = Repo;
         }
     }
 }
