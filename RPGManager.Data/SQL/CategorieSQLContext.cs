@@ -37,8 +37,8 @@ namespace RPGManager.Data.SQL
         public bool updateCategory(ClassCategory category)
         {
             return dbC.RunQuery(string.Format(
-                "UPDATE [Dbo].[ClassCategory] SET [Name] = '{1}', Description = '{2}' WHERE [UserAccountID] = '{0}'",
-                category.AccountId, category.Name, category.Description));
+                "UPDATE [Dbo].[ClassCategory] SET [Name] = '{1}', Description = '{2}' WHERE [ClassCategoryID] = '{0}'",
+                category.Id, category.Name, category.Description));
         }
 
         public bool deleteCategory(ClassCategory category)
