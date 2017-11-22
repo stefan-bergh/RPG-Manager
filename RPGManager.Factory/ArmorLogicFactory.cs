@@ -10,7 +10,7 @@ using RPGManager.ILogic;
 
 namespace RPGManager.Factory
 {
-    class ArmorLogicFactory
+    public class ArmorLogicFactory
     {
         public static IArmorLogic getArmorSQLContext()
         {

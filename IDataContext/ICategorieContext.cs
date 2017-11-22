@@ -14,6 +14,7 @@ namespace IDataContext
         bool updateCategory(ClassCategory category);
         bool deleteCategory(ClassCategory category);
         bool checkCategories(int userid);
+        bool checkClassCategories(int categoryID);
 
     }
 }

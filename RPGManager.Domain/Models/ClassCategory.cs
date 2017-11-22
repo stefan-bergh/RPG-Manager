@@ -25,5 +25,10 @@
             _name = name;
             _description = description;
         }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

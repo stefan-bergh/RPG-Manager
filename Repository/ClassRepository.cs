@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using IDataContext;
 using IRepository;
+using RPGManager.Domain.Models;
 
 namespace Repository
 {
@@ -15,6 +16,31 @@ namespace Repository
         public ClassRepository(IClassContext context)
         {
             CC = context;
+        }
+
+        public List<Class> GetAllClasses(int userid)
+        {
+            return CC.GetAllClasses(userid);
+        }
+
+        public bool insertClass(Class cClass)
+        {
+            return CC.insertClass(cClass);
+        }
+
+        public bool updateClass(Class cClass)
+        {
+            return CC.updateClass(cClass);
+        }
+
+        public bool deleteClass(Class cClass)
+        {
+            return CC.deleteClass(cClass);
+        }
+
+        public bool checkClasses(int userid)
+        {
+            return CC.checkClasses(userid);
         }
     }
 }

@@ -42,5 +42,10 @@ namespace RPGManager.Business
         {
             return CR.checkCategories(userid);
         }
+
+        public bool checkClassCategories(int categoryID)
+        {
+            return CR.checkClassCategories(categoryID);
+        }
     }
 }

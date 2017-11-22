@@ -42,5 +42,10 @@ namespace Repository
         {
             return CC.checkCategories(userid);
         }
+
+        public bool checkClassCategories(int categoryID)
+        {
+            return CC.checkClassCategories(categoryID);
+        }
     }
 }

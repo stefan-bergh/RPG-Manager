@@ -58,27 +58,35 @@
         <Label Content="Category:" HorizontalAlignment="Left" Margin="28,66,0,0" VerticalAlignment="Top" />
         <Label Content="Starting level:" HorizontalAlignment="Left" Margin="28,98,0,0" VerticalAlignment="Top" />
         <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="27" Margin="121,35,0,0" TextWrapping="Wrap" Text=""
-                 VerticalAlignment="Top" Width="120" />
+                 VerticalAlignment="Top" Width="407" TextChanged="tbName_TextChanged" />
         <ComboBox x:Name="cbCategorie" HorizontalAlignment="Left" SelectedIndex="0" Margin="121,67,0,0"
-                  VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Combat" />
-            <ComboBoxItem Content="Support" />
-            <ComboBoxItem Content="Healing" />
-        </ComboBox>
+                  VerticalAlignment="Top" Width="407" SelectionChanged="cbCategorie_SelectionChanged"/>
         <Image x:Name="iLeft" HorizontalAlignment="Left" Height="25" Margin="163,303,0,0" VerticalAlignment="Top"
-               Width="25" Source="Media/leftarrows.png" />
+               Width="25" Source="Media/leftarrows.png" MouseDown="iLeft_MouseDown" />
         <Image x:Name="iRight" HorizontalAlignment="Left" Height="25" Margin="350,303,0,0" VerticalAlignment="Top"
-               Width="25" Source="Media/rightarrows.png" RenderTransformOrigin="5.2,0.632" />
-        <Label x:Name="lbName" Content="Warrior" HorizontalAlignment="Center" Margin="240,301,240.4,0"
-               VerticalAlignment="Top" HorizontalContentAlignment="Center" />
+               Width="25" Source="Media/rightarrows.png" RenderTransformOrigin="5.2,0.632" MouseDown="iRight_MouseDown" />
+        <Label x:Name="lbName" Content="Warrior" HorizontalAlignment="Center" Margin="193,301,188.4,0"
+               VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="157" />
         <Button x:Name="btNew" Content="New" HorizontalAlignment="Left" Margin="184,333,0,0" VerticalAlignment="Top"
-                Width="170" Height="22" />
-        <Slider x:Name="sLevel" HorizontalAlignment="Left" Margin="38,125,0,0" VerticalAlignment="Top"
-                RenderTransformOrigin="-0.6,-0.307" Width="203" />
+                Width="170" Height="22" Click="btNew_Click"/>
+        <Button x:Name="btSave" Content="Save" HorizontalAlignment="Left" Margin="184,333,0,0" VerticalAlignment="Top"
+                Width="170" Height="22" Click="btSave_Click" />
+        <Button x:Name="btDelete" Content="Delete" HorizontalAlignment="Left" Margin="325,261,0,0" VerticalAlignment="Top" Width="170" Height="22" Click="btDelete_Click" />
+        <TextBox x:Name="tbID_HIDDEN" Visibility="Hidden" HorizontalAlignment="Left" Height="27" Margin="127,98,0,0" TextWrapping="Wrap" Text=""
+                 VerticalAlignment="Top" Width="390" />
+        <Button x:Name="btUpdate" Content="Update" HorizontalAlignment="Left" Margin="184,333,0,0" VerticalAlignment="Top"
+                Width="170" Height="22" Click="btUpdate_Click"/>
+        <Slider x:Name="sLevel" HorizontalAlignment="Left" Margin="28,125,0,0" VerticalAlignment="Top"
+                RenderTransformOrigin="-0.6,-0.307" Width="500" Maximum="100" Minimum="1" SmallChange="1" ValueChanged="sLevel_ValueChanged" Value="1" />
+        <Label x:Name="lbLevel" Content="{Binding ElementName=sLevel, Path=Value}" ContentStringFormat="{}{0:N0}" HorizontalAlignment="Left" Margin="121,98,0,0" VerticalAlignment="Top"/>
+
+        <!-- Placeholder images for the location of future expansions
         <Image HorizontalAlignment="Left" Height="140" Margin="38,156,0,0" VerticalAlignment="Top" Width="203"
                Source="Media/placeholder.png" Stretch="Fill" />
         <Image HorizontalAlignment="Left" Height="135" Margin="286,55,0,0" VerticalAlignment="Top" Width="231"
                Source="Media/placeholder.png" Stretch="Fill" />
+        -->
+        <!--BEGIN STATS || Future addition of class-specific stats
         <Label Content="HP:" HorizontalAlignment="Left" Margin="294,216,0,0" VerticalAlignment="Top" />
         <Label Content="Defense:" HorizontalAlignment="Left" Margin="294,236,0,0" VerticalAlignment="Top" />
         <Label Content="Magic:" HorizontalAlignment="Left" Margin="294,256,0,0" VerticalAlignment="Top" />
@@ -87,5 +95,6 @@
         <Label Content="150" HorizontalAlignment="Left" Margin="394,236,0,0" VerticalAlignment="Top" />
         <Label Content="20" HorizontalAlignment="Left" Margin="394,256,0,0" VerticalAlignment="Top" />
         <Label Content="30" HorizontalAlignment="Left" Margin="394,276,0,0" VerticalAlignment="Top" />
+        END STATS-->
     </Grid>
 </Window>

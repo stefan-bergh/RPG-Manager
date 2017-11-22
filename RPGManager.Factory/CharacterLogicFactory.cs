@@ -10,7 +10,7 @@ using RPGManager.ILogic;
 
 namespace RPGManager.Factory
 {
-    class CharacterLogicFactory
+    public class CharacterLogicFactory
     {
         public static ICharacterLogic getCharacterSQLContext()
         {

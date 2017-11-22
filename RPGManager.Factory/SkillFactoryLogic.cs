@@ -10,7 +10,7 @@ using RPGManager.ILogic;
 
 namespace RPGManager.Factory
 {
-    class SkillFactoryLogic
+    public class SkillFactoryLogic
     {
         public static ISkillLogic getSkillSQLContext()
         {

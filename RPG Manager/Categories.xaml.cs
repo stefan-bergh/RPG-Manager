@@ -90,6 +90,11 @@ namespace RPG_Manager
 
         public void updateInputUI(int i)
         {
+            if (!UL.checkCategories(user.Id))
+            {
+                UIStatus = UITypes.CreateNew;
+                return;
+            }
             tbDescription.Text = categories[i].Description;
             tbName.Text = categories[i].Name;
             lbName.Content = categories[i].Name;
@@ -185,14 +190,22 @@ namespace RPG_Manager
 
         private void btDelete_Click(object sender, RoutedEventArgs e)
         {
+            if (UL.checkClassCategories(Convert.ToInt32(tbID_HIDDEN.Text)))
+            {
+                MessageBox.Show(
+                    "This category is being used by existing classes.\r\nPlease make sure this category is no longer in use before attemptign to delete it.");
+                return;
+            }
+            int index = categories.FindIndex(a => a.Id == Convert.ToInt32(tbID_HIDDEN.Text)) - 1;
+            UL.deleteCategory(new ClassCategory(Convert.ToInt32(tbID_HIDDEN.Text), user.Id, tbName.Text, tbDescription.Text));
             categories = UL.GetAllCategorys(user.Id);
-            UL.deleteCategory(new ClassCategory(user.Id, Convert.ToInt32(tbID_HIDDEN.Text), tbName.Text, tbDescription.Text));
-            updateInputUI(categories.FindIndex(a => a.Id == Convert.ToInt32(tbID_HIDDEN.Text)) -1);
+            updateInputUI(index);
         }
 
         private void btUpdate_Click(object sender, RoutedEventArgs e)
         {
             UL.updateCategory(new ClassCategory(user.Id, Convert.ToInt32(tbID_HIDDEN.Text), tbName.Text, tbDescription.Text));
+            categories = UL.GetAllCategorys(user.Id);
             UIStatus = UITypes.Default;
             updateInputUI(categories.FindIndex(a => a.Id == Convert.ToInt32(tbID_HIDDEN.Text)));
         }

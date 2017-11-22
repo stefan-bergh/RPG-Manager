@@ -10,7 +10,7 @@ using RPGManager.ILogic;
 
 namespace RPGManager.Factory
 {
-    class ItemLogicFactory
+    public class ItemLogicFactory
     {
         public static IItemLogic getItemSQLContext()
         {

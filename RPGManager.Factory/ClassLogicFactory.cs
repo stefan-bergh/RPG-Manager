@@ -10,7 +10,7 @@ using RPGManager.ILogic;
 
 namespace RPGManager.Factory
 {
-    class ClassLogicFactory
+    public class ClassLogicFactory
     {
         public static IClassLogic getClassSQLContext()
         {

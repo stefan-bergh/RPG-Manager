@@ -15,5 +15,6 @@ namespace IRepository
         bool deleteCategory(ClassCategory category);
 
         bool checkCategories(int userid);
+        bool checkClassCategories(int categoryID);
     }
 }
