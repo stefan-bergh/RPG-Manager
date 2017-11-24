@@ -18,6 +18,14 @@ namespace RPG_Manager
             this.user = user;
         }
 
+        private void iIcon_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            /* TODO: Add function to update icon picture */
+
+            MessageBox.Show("Update icon.");
+        }
+
+        #region MenuCode
         private void btOverview_Click(object sender, RoutedEventArgs e)
         {
             Positioning.openNewWindow(new Overview(user), this);
@@ -57,12 +65,6 @@ namespace RPG_Manager
         {
             Positioning.openNewWindow(new Skills(user), this);
         }
-
-        private void iIcon_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            /* TODO: Add function to update icon picture */
-
-            MessageBox.Show("Update icon.");
-        }
+#endregion
     }
 }

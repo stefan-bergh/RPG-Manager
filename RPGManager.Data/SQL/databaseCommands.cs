@@ -66,5 +66,34 @@ namespace RPGManager.Data.SQL
             conn.Close();
             return false;
         }
+
+
+        // Specific stored procedure
+
+        public int InsertEquipment(int userid, string name, float price, int equipmenttype)
+        {
+            var conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            var cmd = new SqlCommand("AddEquipment", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@UserID", userid);
+            cmd.Parameters.AddWithValue("@Name", name);
+            cmd.Parameters.AddWithValue("@Price", price);
+            cmd.Parameters.AddWithValue("@Type", equipmenttype);
+
+            SqlParameter outputParameter = new SqlParameter();
+            outputParameter.ParameterName = "@EquipmentID";
+            outputParameter.SqlDbType = SqlDbType.Int;
+            outputParameter.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(outputParameter);
+
+            cmd.ExecuteNonQuery();
+
+            int EquipmentID = (int)outputParameter.Value;
+
+            return EquipmentID;
+        }
     }
 }

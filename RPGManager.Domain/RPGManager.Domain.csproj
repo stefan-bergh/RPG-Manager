@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\ArmorTypes.cs" />
     <Compile Include="Enums\EquipmentTypes.cs" />
     <Compile Include="Enums\UITypes.cs" />
     <Compile Include="Models\Armor.cs" />
