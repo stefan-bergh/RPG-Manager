@@ -21,27 +21,27 @@ namespace RPGManager.Business
 
         public List<Weapon> GetAllWeapons(int userid)
         {
-            this.WR.GetAllWeapons(userid);
+            return this.WR.GetAllWeapons(userid);
         }
 
         public bool insertWeapon(Weapon weapon)
         {
-            this.WR.insertWeapon(weapon);
+            return this.WR.insertWeapon(weapon);
         }
 
         public bool updateWeapon(Weapon weapon)
         {
-            this.WR.updateWeapon(weapon);
+            return this.WR.updateWeapon(weapon);
         }
 
         public bool deleteWeapon(Weapon weapon)
         {
-            this.WR.deleteWeapon(weapon);
+            return this.WR.deleteWeapon(weapon);
         }
 
         public bool checkWeapons(int userid)
         {
-            this.WR.checkWeapons(userid);
+            return this.WR.checkWeapons(userid);
         }
     }
 }

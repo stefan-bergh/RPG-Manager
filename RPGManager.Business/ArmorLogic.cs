@@ -21,28 +21,28 @@ namespace RPGManager.Business
 
         public List<Armor> GetAllArmors(int userid)
         {
-            this.AR.GetAllArmors(userid);
+            return this.AR.GetAllArmors(userid);
         }
 
         public bool insertArmor(Armor armor)
         {
-            this.AR.insertArmor(armor);
+            return this.AR.insertArmor(armor);
         }
 
         public bool updateArmor(Armor armor)
         {
-            this.AR.updateArmor(armor);
+            return this.AR.updateArmor(armor);
 
         }
 
         public bool deleteArmor(Armor armor)
         {
-            this.AR.deleteArmor(armor);
+            return this.AR.deleteArmor(armor);
         }
 
         public bool checkArmors(int userid)
         {
-            this.AR.checkArmors(userid);
+            return this.AR.checkArmors(userid);
         }
     }
 }

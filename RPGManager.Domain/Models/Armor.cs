@@ -27,4 +27,9 @@
             this._defense = defense;
             this._armorType = armorType;
         }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }}

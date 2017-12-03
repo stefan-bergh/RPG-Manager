@@ -21,27 +21,27 @@ namespace RPGManager.Business
 
         public List<Item> GetAllItems(int userid)
         {
-            this.IR.GetAllItems(userid);
+            return this.IR.GetAllItems(userid);
         }
 
         public bool insertItem(Item item)
         {
-            this.IR.insertItem(item);
+            return this.IR.insertItem(item);
         }
 
         public bool updateItem(Item item)
         {
-            this.IR.updateItem(item);
+            return this.IR.updateItem(item);
         }
 
         public bool deleteItem(Item item)
         {
-            this.IR.deleteItem(item);
+            return this.IR.deleteItem(item);
         }
 
         public bool checkItems(int userid)
         {
-            this.IR.checkItems(userid);
+            return this.IR.checkItems(userid);
         }
     }
 }

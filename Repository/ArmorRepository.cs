@@ -21,27 +21,27 @@ namespace Repository
 
         public List<Armor> GetAllArmors(int userid)
         {
-            this.AC.GetAllArmors(userid);
+            return this.AC.GetAllArmors(userid);
         }
 
         public bool insertArmor(Armor armor)
         {
-            this.AC.insertArmor(armor);
+            return this.AC.insertArmor(armor);
         }
 
         public bool updateArmor(Armor armor)
         {
-            this.AC.updateArmor(armor);
+            return this.AC.updateArmor(armor);
         }
 
         public bool deleteArmor(Armor armor)
         {
-            this.AC.deleteArmor(armor);
+            return this.AC.deleteArmor(armor);
         }
 
         public bool checkArmors(int userid)
         {
-            this.AC.checkArmors(userid);
+            return this.AC.checkArmors(userid);
         }
     }
 }

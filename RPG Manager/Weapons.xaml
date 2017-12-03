@@ -55,31 +55,32 @@
             <MenuItem x:Name="btSkills" Header="Skills" Height="Auto" Margin="0.2,0,-0.4,-1.6" Click="btSkills_Click" />
         </Menu>
         <Label Content="Name:" HorizontalAlignment="Left" Margin="38,60,0,0" VerticalAlignment="Top" />
-        <Label Content="Type:" HorizontalAlignment="Left" Margin="38,120,0,0" VerticalAlignment="Top" />
-        <Label Content="Price:" HorizontalAlignment="Left" Margin="38,180,0,0" VerticalAlignment="Top" />
-        <Label Content="Damage:" HorizontalAlignment="Left" Margin="38,240,0,0" VerticalAlignment="Top" />
+        <Label Content="Price:" HorizontalAlignment="Left" Margin="38,114,0,0" VerticalAlignment="Top" />
+        <Label Content="Damage:" HorizontalAlignment="Left" Margin="38,174,0,0" VerticalAlignment="Top" />
         <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="27" Margin="121,60,0,0" TextWrapping="Wrap" Text=""
-                 VerticalAlignment="Top" Width="120" />
-        <ComboBox x:Name="cbType" HorizontalAlignment="Left" SelectedIndex="0" Margin="121,120,0,0"
-                  VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Sword" />
-            <ComboBoxItem Content="Lance" />
-            <ComboBoxItem Content="Axe" />
-            <ComboBoxItem Content="Bow" />
-        </ComboBox>
-        <TextBox x:Name="tbPrice" HorizontalAlignment="Left" Height="27" Margin="121,180,0,0" TextWrapping="Wrap"
-                 Text="" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="tbDamage" HorizontalAlignment="Left" Height="27" Margin="121,240,0,0" TextWrapping="Wrap"
-                 Text="" VerticalAlignment="Top" Width="120" />
+                 VerticalAlignment="Top" TextChanged="UI_Update" Width="120" />
+        <TextBox x:Name="tbPrice" HorizontalAlignment="Left" Height="27" Margin="121,114,0,0" TextWrapping="Wrap"
+                 Text="" TextChanged="UI_Update" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="tbDamage" HorizontalAlignment="Left" Height="27" Margin="121,174,0,0" TextWrapping="Wrap"
+                 Text="" TextChanged="UI_Update" VerticalAlignment="Top" Width="120" />
         <Image x:Name="iIcon" HorizontalAlignment="Left" Height="175" Margin="300,60,0,0" VerticalAlignment="Top"
                Width="175" MouseDown="iIcon_MouseDown" Source="Media/placeholder.png" />
         <Image x:Name="iLeft" HorizontalAlignment="Left" Height="25" Margin="163,297,0,0" VerticalAlignment="Top"
-               Width="25" Source="Media/leftarrows.png" />
+               Width="25" MouseDown="iLeft_MouseDown" Source="Media/leftarrows.png" />
         <Image x:Name="iRight" HorizontalAlignment="Left" Height="25" Margin="350,297,0,0" VerticalAlignment="Top"
-               Width="25" Source="Media/rightarrows.png" RenderTransformOrigin="5.2,0.632" />
+               Width="25" MouseDown="iRight_MouseDown" Source="Media/rightarrows.png" RenderTransformOrigin="5.2,0.632" />
         <Label x:Name="lbName" Content="Strong sword Name" HorizontalAlignment="Center" Margin="0,295,0,0"
                VerticalAlignment="Top" HorizontalContentAlignment="Center" />
         <Button x:Name="btNew" Content="New" HorizontalAlignment="Left" Margin="184,327,0,0" VerticalAlignment="Top"
-                Width="170" Height="22" />
+                Width="170" Height="22" Click="btNew_Click"/>
+        <Button x:Name="btSave" Content="Save" HorizontalAlignment="Left" Margin="184,327,0,0" VerticalAlignment="Top"
+                Width="170" Height="22" Click="btSave_Click" />
+        <Button x:Name="btDelete" Content="Delete" HorizontalAlignment="Left" Margin="300,251,0,0" VerticalAlignment="Top" Width="175" Height="22" Click="btDelete_Click" />
+        <TextBox x:Name="tbEquipmentID_HIDDEN" Visibility="Hidden" HorizontalAlignment="Left" Height="27" Margin="127,98,0,0" TextWrapping="Wrap" Text=""
+                 VerticalAlignment="Top" Width="390" />
+        <TextBox x:Name="tbWeaponID_HIDDEN" Visibility="Hidden" HorizontalAlignment="Left" Height="27" Margin="127,98,0,0" TextWrapping="Wrap" Text=""
+                 VerticalAlignment="Top" Width="390" />
+        <Button x:Name="btUpdate" Content="Update" HorizontalAlignment="Left" Margin="184,327,0,0" VerticalAlignment="Top"
+                Width="170" Height="22" Click="btUpdate_Click"/>
     </Grid>
 </Window>

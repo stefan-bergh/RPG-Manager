@@ -204,7 +204,7 @@ namespace RPG_Manager
 
         private void btUpdate_Click(object sender, RoutedEventArgs e)
         {
-            UL.updateCategory(new ClassCategory(user.Id, Convert.ToInt32(tbID_HIDDEN.Text), tbName.Text, tbDescription.Text));
+            UL.updateCategory(new ClassCategory(Convert.ToInt32(tbID_HIDDEN.Text), user.Id, tbName.Text, tbDescription.Text));
             categories = UL.GetAllCategorys(user.Id);
             UIStatus = UITypes.Default;
             updateInputUI(categories.FindIndex(a => a.Id == Convert.ToInt32(tbID_HIDDEN.Text)));

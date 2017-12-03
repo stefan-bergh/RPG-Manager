@@ -31,7 +31,7 @@ namespace RPGManager.Data.SQL
                     EquipmentId = (int)row["EquipmentID"],
                     EquipmentType = (EquipmentTypes)row["Type"],
                     Name = row["Name"].ToString(),
-                    Price = (float)row["Price"],
+                    Price = float.Parse(row["Price"].ToString()),
                     Effect = row["Effect"].ToString(),
                     ItemId = (int)row["ItemID"],
                     Repeat = (int)row["Repeat"]

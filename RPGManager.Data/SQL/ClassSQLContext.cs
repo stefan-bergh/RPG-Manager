@@ -53,5 +53,12 @@ namespace RPGManager.Data.SQL
                 "SELECT * FROM [Dbo].[Class] WHERE [UserAccountID] = '{0}'",
                 userid));
         }
+
+        public bool checkCharacterClasses(int classID)
+        {
+            return dbC.checkQuery(string.Format(
+                "SELECT * FROM [Dbo].[Class] JOIN [Dbo].[Character] ON Class.ClassID = Character.ClassID WHERE Class.ClassID = '{0}'",
+                classID));
+        }
     }
 }

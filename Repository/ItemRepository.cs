@@ -21,27 +21,27 @@ namespace Repository
 
         public List<Item> GetAllItems(int userid)
         {
-            this.IC.GetAllItems(userid);
+            return this.IC.GetAllItems(userid);
         }
 
         public bool insertItem(Item item)
         {
-            this.IC.insertItem(item);
+            return this.IC.insertItem(item);
         }
 
         public bool updateItem(Item item)
         {
-            this.IC.updateItem(item);
+            return this.IC.updateItem(item);
         }
 
         public bool deleteItem(Item item)
         {
-            this.IC.deleteItem(item);
+            return this.IC.deleteItem(item);
         }
 
         public bool checkItems(int userid)
         {
-            this.IC.checkItems(userid);
+            return this.IC.checkItems(userid);
         }
     }
 }

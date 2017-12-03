@@ -20,7 +20,7 @@ namespace RPGManager.Data.SQL
         {
             DataTable dt =
                 dbC.getTable(string.Format(
-                    "SELECT * FROM Equipment RIGHT JOIN Weapon ON Equipment.EquipmentID = Weapon.EquipmentID WHERE [UserAccountID] = '{0}'", userid));
+                    "SELECT * FROM Equipment JOIN Weapon ON Equipment.EquipmentID = Weapon.EquipmentID WHERE [UserAccountID] = '{0}'", userid));
 
             List<Weapon> weapons = new List<Weapon>();
             foreach (DataRow row in dt.Rows)
@@ -33,7 +33,7 @@ namespace RPGManager.Data.SQL
                     EquipmentId = (int)row["EquipmentID"],
                     EquipmentType = (EquipmentTypes)row["Type"],
                     Name = row["Name"].ToString(),
-                    Price = (float)row["Price"]
+                    Price = float.Parse(row["Price"].ToString())
                 });
             }
             return weapons;
