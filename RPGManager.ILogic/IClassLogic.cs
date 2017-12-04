@@ -15,5 +15,6 @@ namespace RPGManager.ILogic
         bool deleteClass(Class cClass);
 
         bool checkClasses(int userid);
+        bool checkCharacterClasses(int userid);
     }
 }

@@ -215,9 +215,17 @@ namespace RPG_Manager
 
         private void btDelete_Click(object sender, RoutedEventArgs e)
         {
+            if (this.ClassL.checkCharacterClasses(Convert.ToInt32(tbID_HIDDEN.Text)))
+            {
+                MessageBox.Show(
+                    "This class is being used by existing characters.\r\nPlease make sure this class is no longer in use before attemptign to delete it.");
+                return;
+            }
+            int index = classes.FindIndex(a => a.Id == Convert.ToInt32(tbID_HIDDEN.Text)) - 1;
             ClassL.deleteClass(new Class(Convert.ToInt32(tbID_HIDDEN.Text), user.Id, categories[cbCategorie.SelectedIndex].Id, tbName.Text, (int)sLevel.Value));
             classes = ClassL.GetAllClasses(user.Id);
-            updateInputUI(classes.FindIndex(a => a.Id == Convert.ToInt32(tbID_HIDDEN.Text)) - 1);
+            if (index < 0) index = 0;
+            updateInputUI(index);
         }
 
         private void btUpdate_Click(object sender, RoutedEventArgs e)

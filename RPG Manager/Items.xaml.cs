@@ -179,6 +179,7 @@ namespace RPG_Manager
                 ItemId = Convert.ToInt32(this.tbItemID_HIDDEN.Text)
             });
             items = this.IL.GetAllItems(this.user.Id);
+            if (index < 0) index = 0;
             updateInputUI(index);
         }
 

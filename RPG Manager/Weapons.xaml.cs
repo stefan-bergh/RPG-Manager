@@ -182,6 +182,7 @@ namespace RPG_Manager
                 WeaponId = Convert.ToInt32(this.tbWeaponID_HIDDEN.Text)
             });
             weapons = this.WL.GetAllWeapons(this.user.Id);
+            if (index < 0) index = 0;
             updateInputUI(index);
         }
 

@@ -199,6 +199,7 @@ namespace RPG_Manager
             int index = categories.FindIndex(a => a.Id == Convert.ToInt32(tbID_HIDDEN.Text)) - 1;
             UL.deleteCategory(new ClassCategory(Convert.ToInt32(tbID_HIDDEN.Text), user.Id, tbName.Text, tbDescription.Text));
             categories = UL.GetAllCategorys(user.Id);
+            if (index < 0) index = 0;
             updateInputUI(index);
         }
 

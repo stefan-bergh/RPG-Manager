@@ -197,6 +197,7 @@ namespace RPG_Manager
                                     ArmorId = Convert.ToInt32(this.tbArmorID_HIDDEN.Text)
                                });
             armors = this.AL.GetAllArmors(this.user.Id);
+            if (index < 0) index = 0;
             updateInputUI(index);
         }
 

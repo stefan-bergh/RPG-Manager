@@ -18,6 +18,11 @@ namespace RPGManager.Domain.Models
         public int ClassId { get => _classId; set => _classId = value; }
         public List<Stat> Stats { get => _stats; set => _stats = value; }
 
+        public Character()
+        {
+            
+        }
+
         public Character(int accountId, string name, int startingLevel, int classId)
         {
             _accountId = accountId;

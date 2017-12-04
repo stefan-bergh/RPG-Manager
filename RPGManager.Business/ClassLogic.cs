@@ -42,5 +42,10 @@ namespace RPGManager.Business
         {
             return CR.checkClasses(userid);
         }
+
+        public bool checkCharacterClasses(int classID)
+        {
+            return this.CR.checkCharacterClasses(classID);
+        }
     }
 }

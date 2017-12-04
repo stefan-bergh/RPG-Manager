@@ -42,5 +42,10 @@ namespace Repository
         {
             return CC.checkClasses(userid);
         }
+
+        public bool checkCharacterClasses(int classID)
+        {
+            return CC.checkCharacterClasses(classID);
+        }
     }
 }

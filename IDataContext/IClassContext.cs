@@ -14,5 +14,6 @@ namespace IDataContext
         bool updateClass(Class cClass);
         bool deleteClass(Class cClass);
         bool checkClasses(int userid);
+        bool checkCharacterClasses(int classid);
     }
 }

@@ -43,7 +43,7 @@ namespace RPGManager.Data.SQL
         public bool deleteClass(Class cClass)
         {
             return dbC.RunQuery(string.Format(
-                "DELETE FROM [Dbo].[ClassCategory] WHERE [ClassID] = '{0}'",
+                "DELETE FROM [Dbo].[Class] WHERE [ClassID] = '{0}'",
                 cClass.Id));
         }
 

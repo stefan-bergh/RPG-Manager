@@ -47,24 +47,27 @@
         <Label Content="Class:" HorizontalAlignment="Left" Margin="61,73,0,0" VerticalAlignment="Top" />
         <Label Content="Starting level:" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" />
         <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="27" Margin="121,35,0,0" TextWrapping="Wrap" Text=""
-                 VerticalAlignment="Top" Width="120" />
+                 VerticalAlignment="Top" Width="120" TextChanged="UI_Update" />
         <ComboBox x:Name="cbClasses" HorizontalAlignment="Left" SelectedIndex="0" Margin="121,67,0,0"
-                  VerticalAlignment="Top" Width="120">
+                  VerticalAlignment="Top" Width="120" SelectionChanged="UI_Update">
             <ComboBoxItem Content="Class1" />
             <ComboBoxItem Content="Class2" />
             <ComboBoxItem Content="Class3" />
         </ComboBox>
-        <xctk:IntegerUpDown x:Name="IudStartingLevel" Minimum="1" Maximum="40" Text="1" HorizontalAlignment="Left" Margin="121,105,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.396,0.378" />
+        <xctk:IntegerUpDown x:Name="IudStartingLevel" Minimum="1" Maximum="40" Text="1" ValueChanged="IudStartingLevel_OnValueChanged" HorizontalAlignment="Left" Margin="121,105,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.396,0.378" />
         <Image x:Name="iLeft" HorizontalAlignment="Left" Height="25" Margin="163,303,0,0" VerticalAlignment="Top"
-               Width="25" Source="Media/leftarrows.png" />
+               Width="25" Source="Media/leftarrows.png" MouseDown="iLeft_MouseDown"/>
         <Image x:Name="iRight" HorizontalAlignment="Left" Height="25" Margin="350,303,0,0" VerticalAlignment="Top"
-               Width="25" Source="Media/rightarrows.png" RenderTransformOrigin="5.2,0.632" />
+               Width="25" Source="Media/rightarrows.png" RenderTransformOrigin="5.2,0.632" MouseDown="iRight_MouseDown"/>
         <Label x:Name="lbName" Content="Warrior" HorizontalAlignment="Center" Margin="193,301,193.4,0"
                VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="152" />
         <Button x:Name="btNew" Content="New" HorizontalAlignment="Left" Margin="184,333,0,0" VerticalAlignment="Top"
-                Width="170" Height="22" />
-        <Image HorizontalAlignment="Left" Height="120" Margin="80,163,0,0" VerticalAlignment="Top" Width="120"
+                Width="170" Height="22" Click="btNew_Click" />
+        <Button x:Name="btSave" Content="Save" HorizontalAlignment="Left" Margin="184,333,0,0" VerticalAlignment="Top"
+                Width="170" Height="22" Click="btSave_Click" />
+        <Image HorizontalAlignment="Left" Height="120" Margin="361,56,0,0" VerticalAlignment="Top" Width="120"
                Source="Media/placeholder.png" Stretch="Fill" />
+        <!-- STATS ITEMS
         <Label Content="Health:" HorizontalAlignment="Left" Margin="322,48,0,0" VerticalAlignment="Top" />
         <Label Content="Attack:" HorizontalAlignment="Left" Margin="322,73,0,0" VerticalAlignment="Top" />
         <Label Content="Speed:" HorizontalAlignment="Left" Margin="322,98,0,0" VerticalAlignment="Top" />
@@ -75,6 +78,11 @@
         <xctk:IntegerUpDown x:Name="IudStatSpd" Text="20" HorizontalAlignment="Left" Margin="432,98,0,0" VerticalAlignment="Top" Width="63" />
         <xctk:IntegerUpDown x:Name="IudStatDef" Text="30" HorizontalAlignment="Left" Margin="432,123,0,0" VerticalAlignment="Top" Width="63" />
         <xctk:IntegerUpDown x:Name="IudStatRes" Text="30" HorizontalAlignment="Left" Margin="432,148,0,0" VerticalAlignment="Top" Width="63" />
-        <Button x:Name="btDelete" Content="Delete" HorizontalAlignment="Left" Margin="325,261,0,0" VerticalAlignment="Top" Width="170" Height="22" />
+        -->
+        <TextBox x:Name="tbCharacterID_HIDDEN" Visibility="Hidden" HorizontalAlignment="Left" Height="27" Margin="127,98,0,0" TextWrapping="Wrap" Text=""
+                 VerticalAlignment="Top" Width="390" />
+        <Button x:Name="btUpdate" Content="Update" HorizontalAlignment="Left" Margin="184,333,0,0" VerticalAlignment="Top"
+                Width="170" Height="22" Click="btUpdate_Click"/>
+        <Button x:Name="btDelete" Content="Delete" HorizontalAlignment="Left" Margin="325,261,0,0" VerticalAlignment="Top" Width="170" Height="22" Click="btDelete_Click"/>
     </Grid>
 </Window>

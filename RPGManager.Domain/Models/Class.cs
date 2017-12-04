@@ -30,5 +30,10 @@
             _name = name;
             this.startingLevel = startingLevel;
         }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }
