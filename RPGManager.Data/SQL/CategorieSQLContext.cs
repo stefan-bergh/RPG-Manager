@@ -58,7 +58,7 @@ namespace RPGManager.Data.SQL
         public bool checkClassCategories(int categoryID)
         {
             return dbC.checkQuery(string.Format(
-                "SELECT * FROM [Dbo].[ClassCategory] RIGHT JOIN [Dbo].[Class] ON ClassCategory.ClassCategoryID = Class.ClassCategoryID WHERE ClassCategory.ClassCategoryID = '{0}'",
+                "SELECT * FROM [Dbo].[ClassCategory] JOIN [Dbo].[Class] ON ClassCategory.ClassCategoryID = Class.ClassCategoryID WHERE ClassCategory.ClassCategoryID = '{0}'",
                 categoryID));
         }
     }
