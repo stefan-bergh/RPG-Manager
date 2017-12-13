@@ -20,7 +20,7 @@ namespace RPGManager.Data.SQL
         {
             DataTable dt =
                 dbC.getTable(string.Format(
-                    "SELECT * FROM Equipment JOIN Weapon ON Equipment.EquipmentID = Weapon.EquipmentID WHERE [UserAccountID] = '{0}'", userid));
+                    "SELECT * FROM Equipment RIGHT JOIN Weapon ON Equipment.EquipmentID = Weapon.EquipmentID WHERE [UserAccountID] = '{0}'", userid));
 
             List<Weapon> weapons = new List<Weapon>();
             foreach (DataRow row in dt.Rows)
@@ -78,7 +78,7 @@ namespace RPGManager.Data.SQL
         {
             return dbC.checkQuery(
                 string.Format(
-                    "SELECT * FROM Equipment JOIN Weapon ON Equipment.EquipmentID = Weapon.EquipmentID WHERE [UserAccountID] = '{0}'",
+                    "SELECT * FROM Equipment RIGHT JOIN Weapon ON Equipment.EquipmentID = Weapon.EquipmentID WHERE [UserAccountID] = '{0}'",
                     userid));
         }
     }

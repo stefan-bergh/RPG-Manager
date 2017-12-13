@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "D. Domain", "D. Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "E. Factory", "E. Factory", "{8ADB3AA3-1030-4EBF-BE85-9E8310934054}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPGManager.WebPresentation", "RPGManager.WebPresentation\RPGManager.WebPresentation.csproj", "{B4CF43DE-4984-4FA5-8C70-66B604A6FF2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{6376417E-C9CF-4879-B26C-FAA76D28EDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6376417E-C9CF-4879-B26C-FAA76D28EDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6376417E-C9CF-4879-B26C-FAA76D28EDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4CF43DE-4984-4FA5-8C70-66B604A6FF2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4CF43DE-4984-4FA5-8C70-66B604A6FF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4CF43DE-4984-4FA5-8C70-66B604A6FF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4CF43DE-4984-4FA5-8C70-66B604A6FF2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +99,7 @@ Global
 		{6376417E-C9CF-4879-B26C-FAA76D28EDD8} = {7F75E68C-653C-40D1-B6B5-C681614E13D4}
 		{F2F7AEC2-B7D0-45B7-B2C3-3253C994FA89} = {D55B6354-B5FF-4CF7-8487-E5754FB1223E}
 		{433E6221-ABF0-4B89-9709-7A3062E48ED5} = {D55B6354-B5FF-4CF7-8487-E5754FB1223E}
+		{B4CF43DE-4984-4FA5-8C70-66B604A6FF2A} = {816D668F-62E2-4562-A1E7-9FCACCE8A29A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {646917C1-7E7E-42DD-A549-6A652962444A}

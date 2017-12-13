@@ -77,5 +77,6 @@
                 RenderTransformOrigin="-0.6,-0.307" Width="203" />
         <Image HorizontalAlignment="Left" Height="135" Margin="286,55,0,0" VerticalAlignment="Top" Width="231"
                Source="Media/placeholder.png" Stretch="Fill" />
+        <Label Content="In Development" FontSize="40" HorizontalAlignment="Left" Margin="121,248,0,0" VerticalAlignment="Top" Height="62" Width="299" />
     </Grid>
 </Window>

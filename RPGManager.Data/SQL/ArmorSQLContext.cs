@@ -79,7 +79,7 @@ namespace RPGManager.Data.SQL
         {
             return dbC.checkQuery(
                 string.Format(
-                    "SELECT * FROM Equipment JOIN Armor ON Equipment.EquipmentID = Armor.EquipmentID WHERE[UserAccountID] = '{0}'",
+                    "SELECT * FROM Equipment RIGHT JOIN Armor ON Equipment.EquipmentID = Armor.EquipmentID WHERE[UserAccountID] = '{0}'",
                     userid));
         }
     }
