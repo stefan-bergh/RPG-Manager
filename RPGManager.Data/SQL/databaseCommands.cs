@@ -11,8 +11,7 @@ namespace RPGManager.Data.SQL
         // Used to run all INSERT, UPDATE and DELETE queries.
         public bool RunQuery(string Query)
         {
-            /*y
-            {*/
+            //{
                 var query = Query;
                 var conn = new SqlConnection(connectionString);
                 conn.Open();
